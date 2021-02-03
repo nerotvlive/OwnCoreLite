@@ -1,6 +1,10 @@
 # This is OwnCoreLite #
 an inbuilt API for spigot plugins
 * * *
+* <strong>Lists</strong>
+  * <a href="https://github.com/nerotvlive/OwnCoreLite/blob/master/src/de/nerotvlive/owncorelite/api/LegacySounds.yml">LegacySounds.yml</a>
+  * <a href="https://github.com/nerotvlive/OwnCoreLite/blob/master/src/de/nerotvlive/owncorelite/api/Sounds.yml">Sounds.yml</a>
+<br><br>
 * <strong>Features</strong>
   * Support for legacy an new versions
   * ConfigAPI
