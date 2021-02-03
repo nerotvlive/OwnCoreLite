@@ -1,5 +1,5 @@
 # List of all available Sounds of the Minecraft 1.16 Version
-# Show https://github.com/nerotvlive/KnockIT/tree/master/src/de/nerotvlive/owncorelite/api/LegacySounds.yml for Legacy Sounds
+# Show https://github.com/nerotvlive/OwnCoreLite/blob/master/src/de/nerotvlive/owncorelite/api/LegacySounds.yml for Legacy Sounds
 Sounds:
   001: AMBIENT_BASALT_DELTAS_ADDITIONS
   002: AMBIENT_BASALT_DELTAS_LOOP

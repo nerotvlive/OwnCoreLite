@@ -1,5 +1,5 @@
 # List of all available Sounds of the Minecraft Legacy Version
-# Show https://github.com/nerotvlive/KnockIT/tree/master/src/de/nerotvlive/owncorelite/api/Sounds.yml for 1.13-1.16 Sounds
+# Show https://github.com/nerotvlive/OwnCoreLite/blob/master/src/de/nerotvlive/owncorelite/api/Sounds.yml for 1.13-1.16 Sounds
 Sounds:
   001: AMBIENCE_CAVE
   002: AMBIENCE_RAIN

@@ -1,10 +1,42 @@
 # This is OwnCoreLite #
 an inbuilt API for spigot plugins
 * * *
-
-* Support for legacy an new versions
-* ConfigAPI
-  * Default configs
+* <strong>Features</strong>
+  * Support for legacy an new versions
+  * ConfigAPI
+    * Default configs
+    * better save and reload system for configs
+    * check if an config entry exists, if not create it
+  * PlayerAPI
+    * generate playerfiles and save some information there
+    * send automatic formatted messages (optional: with sound)
+  * ServerAPI
+    * send automatic formatted console messages
+    * check server version
+    * check if server is running on a legacy version, or not
+    * better server shutdown
+    * send debug messages (if that is an enabled thing in the config.yml)
+  * SoundAPI
+    * resolve from soundname if this is a legacy sound, or not
+    * LegacySound support
+    * new sound support
+  * WorldAPI
+    * resolve difficulty from names
+      * supported: peaceful, easy, normal, hard, 0, 1, 2 and 3
+    * get a world from a player
+    * change weather from a world
+    * change difficulty from a world
+    * change time from a world
+  
+* <strong>To-do list</strong>
+  * improve and expand the existing APIs
+    * example: Gamemode Methods in PlayerAPI
+    * example: world management in WorldAPI
+      * and more
+  * TeleportAPI
+  * MySQL API
+  * Big Soundsystem improvement
+    * and more...
   
 ## How to use ##
 ***
