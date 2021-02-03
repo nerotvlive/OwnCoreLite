@@ -53,8 +53,8 @@ Then you need to take a look over the main class from the API ```de.nerotvlive.o
 After that you are able to use the API in your project.
 
 Expample of use:<br>
-To check if an entry is already made  in a config file or create it if not use
-> ConfigAPI.checkEntry("Path.To.Entry","DefaultContent",File,YamlConfiguration)
+To check if an entry is already made  in a config file or create it if not use<br>
+```ConfigAPI.checkEntry("Path.To.Entry","DefaultContent",File,YamlConfiguration);```
 
 Or to check if the server runs a legacy version or not:
 ```
