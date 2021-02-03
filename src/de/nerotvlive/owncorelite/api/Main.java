@@ -10,6 +10,10 @@ public class Main {
 
      */
 
+    public static String getName() {
+        return "PluginName";
+    }
+
     public static String ConsolePrefix = "OwnCoreAPI";
 
     public static void initConfig() {
