@@ -1,5 +1,5 @@
 # This is OwnCoreLite #
-an inbuilt API for spigot plugins
+an inbuilt API for spigot plugins - by nerotvlive - License: <a href="https://github.com/nerotvlive/OwnCoreLite/blob/master/License.md">here</a>
 * * *
 * <strong>Lists</strong>
   * <a href="https://github.com/nerotvlive/OwnCoreLite/blob/master/src/de/nerotvlive/owncorelite/api/LegacySounds.yml">LegacySounds.yml</a>
