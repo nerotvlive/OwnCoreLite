@@ -16,6 +16,10 @@ public class Main {
 
     public static String ConsolePrefix = "OwnCoreAPI";
 
+    public static void enableAPI() {
+        initConfig();
+    }
+
     public static void initConfig() {
         ConfigAPI.checkEntry("Settings.Console.doDebug",false,ConfigAPI.Config,ConfigAPI.CFG);
         ConfigAPI.checkEntry("Settings.MySQL.enable",false,ConfigAPI.Config,ConfigAPI.CFG);

@@ -45,6 +45,11 @@ an inbuilt API for spigot plugins
 ## How to use ##
 ***
 To use this API you need to copy the <strong>de.nerotvlive.owncorelite.api</strong> package into your project.<br>
+And then you need to add the
+```de.nerotvlive.owncore.api.Main.enableAPI();```
+method in your ```onEnable()``` method in your main class.
+Then you need to take a look over the main class from the API ```de.nerotvlive.owncore.api.Main``` and change the prefix, pluginname and the other strings to your plugin information.
+
 After that you are able to use the API in your project.
 
 Expample of use:<br>
