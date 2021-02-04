@@ -44,19 +44,20 @@ an inbuilt API for spigot plugins - by nerotvlive - License: <a href="https://gi
   
 ## How to use ##
 ***
+Copy the ```de.nerotvlive.owncorelite.api``` package into your source.
 To use this API you need to copy the <strong>de.nerotvlive.owncorelite.api</strong> package into your project.<br>
-And then you need to add the
-```de.nerotvlive.owncore.api.Main.enableAPI();```
-method in your ```onEnable()``` method in your main class.
-Then you need to take a look over the main class from the API ```de.nerotvlive.owncore.api.Main``` and change the prefix, pluginname and the other strings to your plugin information.
+After that add ```de.nerotvlive.owncorelite.api.Main.enableAPI();``` in your ```onEnable()``` method.
+<br>Make sure you've checked out the ```de.nerotvlive.owncorelite.api.Main``` class and adapted the variables to your plugin. 
 
-After that you are able to use the API in your project.
+<strong>Example 1:</strong><br>
+Check if an entry exists, if not - create it.
+```
+ConfigAPI.checkEntry("Path.To.Entry","DefaultContent",File,YamlConfiguration);
+```
 
-Expample of use:<br>
-To check if an entry is already made  in a config file or create it if not use<br>
-```ConfigAPI.checkEntry("Path.To.Entry","DefaultContent",File,YamlConfiguration);```
 
-Or to check if the server runs a legacy version or not:
+<strong>Example 2:</strong><br>
+Check if the server runs a legacy version of Minecraft.
 ```
 if(ServerAPI.isLegacy()) {
   //Automatic formatted messages
