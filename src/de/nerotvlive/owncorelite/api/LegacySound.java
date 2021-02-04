@@ -1,10 +1,8 @@
 package de.nerotvlive.owncorelite.api;
 
 public enum LegacySound {
-
     //OWNCORELITE VERSION: BETA 1.0.0
     //AUTHOR: NEROTVLIVE
-
     AMBIENCE_CAVE,
     AMBIENCE_RAIN,
     AMBIENCE_THUNDER,

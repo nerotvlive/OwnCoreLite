@@ -17,11 +17,9 @@ public class ConfigAPI {
     public static YamlConfiguration MSG = YamlConfiguration.loadConfiguration(Messages);
 
     public static File PlayerCFG(Player player) {
-        ServerAPI.sendDebugMessage("Creating/Getting userfile of "+player.getUniqueId()+" ("+player.getName()+") 1/2");
         return new File("plugins/"+Main.getName()+"/users/"+player.getUniqueId()+".yml");
     }
     public static YamlConfiguration PCFG(Player player) {
-        ServerAPI.sendDebugMessage("Creating/Getting userfile of "+player.getUniqueId()+" ("+player.getName()+") 2/2");
         return YamlConfiguration.loadConfiguration(PlayerCFG(player));
     }
 

@@ -1,10 +1,8 @@
 package de.nerotvlive.owncorelite.api;
 
 public enum Sound {
-
     //OWNCORELITE VERSION: BETA 1.0.0
     //AUTHOR: NEROTVLIVE
-
     AMBIENT_BASALT_DELTAS_ADDITIONS,
     AMBIENT_BASALT_DELTAS_LOOP,
     AMBIENT_BASALT_DELTAS_MOOD,
