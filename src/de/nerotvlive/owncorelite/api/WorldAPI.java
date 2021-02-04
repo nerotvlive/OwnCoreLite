@@ -15,6 +15,7 @@ public class WorldAPI {
         return player.getWorld();
     }
 
+    @Deprecated
     public static String getPlayerWorldName(Player player) {
         ServerAPI.sendDebugMessage("Trying to get worldname of "+player.getUniqueId()+" ("+player.getName()+")");
         return getPlayerWorld(player).getName();
@@ -26,47 +27,64 @@ public class WorldAPI {
             return Bukkit.getWorld(worldname);
         }
     }
-    public static void setTime(Integer time, World world) {
-        ServerAPI.sendDebugMessage("Trying to set the time of world "+world.getName());
-        long t = time.longValue();
-        world.setTime(t);
+
+    public static Difficulty getDifficulty(String worldname) {
+        if(Bukkit.getWorld(worldname) != null) {
+            return Bukkit.getWorld(worldname).getDifficulty();
+        } else {
+            return null;
+        }
     }
 
-    public static void setTime(Integer time, String worldname) {
+    public static Weather getWeather(World world) {
+        if(world.isThundering()) {
+            return Weather.THUNDER;
+        } else if(world.hasStorm()) {
+            return Weather.RAIN;
+        } else {
+            return Weather.SUN;
+        }
+    }
+
+    public static void setTime(long time, World world) {
+        ServerAPI.sendDebugMessage("Trying to set the time of world "+world.getName());
+        world.setTime(time);
+    }
+
+    public static void setTime(long time, String worldname) {
         ServerAPI.sendDebugMessage("Trying to set the time of world "+worldname);
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
-            long t = time.longValue();
+            world.setTime(time);
+        }
+    }
+
+    public static void addTime(long time, World world) {
+        ServerAPI.sendDebugMessage("Trying to change the time of world "+world.getName());
+        long t = world.getTime()+time;
+        world.setTime(t);
+    }
+
+    public static void addTime(long time, String worldname) {
+        ServerAPI.sendDebugMessage("Trying to change the time of world "+worldname);
+        if(Bukkit.getWorld(worldname) != null) {
+            World world = Bukkit.getWorld(worldname);
+            long t = world.getTime()+time;
             world.setTime(t);
         }
     }
 
-    public static void addTime(Integer time, World world) {
+    public static void removeTime(long time, World world) {
         ServerAPI.sendDebugMessage("Trying to change the time of world "+world.getName());
-        long t = world.getTime()+time.longValue();
+        long t = world.getTime()-time;
         world.setTime(t);
     }
 
-    public static void addTime(Integer time, String worldname) {
+    public static void removeTime(long time, String worldname) {
         ServerAPI.sendDebugMessage("Trying to change the time of world "+worldname);
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
-            long t = world.getTime()+time.longValue();
-            world.setTime(t);
-        }
-    }
-
-    public static void removeTime(Integer time, World world) {
-        ServerAPI.sendDebugMessage("Trying to change the time of world "+world.getName());
-        long t = world.getTime()-time.longValue();
-        world.setTime(t);
-    }
-
-    public static void removeTime(Integer time, String worldname) {
-        ServerAPI.sendDebugMessage("Trying to change the time of world "+worldname);
-        if(Bukkit.getWorld(worldname) != null) {
-            World world = Bukkit.getWorld(worldname);
-            long t = world.getTime()-time.longValue();
+            long t = world.getTime()-time;
             world.setTime(t);
         }
     }
@@ -141,6 +159,19 @@ public class WorldAPI {
         World world = Bukkit.getServer().getWorld(worldname);
         if(world != null)  {
             world.setDifficulty(diff);
+        }
+    }
+
+    public static void setWeather(World world,Weather weather) {
+        if(weather.equals(Weather.RAIN)) {
+            world.setThundering(false);
+            world.setStorm(true);
+        } else if(weather.equals(Weather.THUNDER)) {
+            world.setStorm(true);
+            world.setThundering(true);
+        } else {
+            world.setThundering(false);
+            world.setStorm(false);
         }
     }
 
