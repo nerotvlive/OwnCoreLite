@@ -65,4 +65,4 @@ if(ServerAPI.isLegacy()) {
   ServerAPI.sendConsoleMessage("&4This server isn't running a legacy minecraft version");
 }
 ```
-<br> More how to use information and features coming in the upcoming time. Stay tuned.
+<br> (!) More how to use information and features coming in the upcoming time. Stay tuned.
