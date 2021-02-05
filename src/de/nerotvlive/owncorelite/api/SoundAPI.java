@@ -150,7 +150,11 @@ public class SoundAPI {
                 return Sound.valueOf(saveSound.toString());
             }
         } else {
-            return Sound.ZOMBIE_WOODBREAK;
+            if(!(ServerAPI.isLegacy())) {
+                return getNewSound(NewSound.WEATHER_RAIN_ABOVE);
+            } else {
+                return Sound.ZOMBIE_WOODBREAK;
+            }
         }
     }
 }
