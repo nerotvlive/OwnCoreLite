@@ -1,6 +1,6 @@
 package de.nerotvlive.owncorelite.api;
 
-public enum LegacySound {
+public enum SaveSound {
     AMBIENCE_CAVE,
     AMBIENCE_RAIN,
     AMBIENCE_THUNDER,

@@ -8,7 +8,7 @@ public class Main {
 
     //change these following strings
     public static String PluginName = "OwnCoreLiteAPI";
-    public static String ConsolePrefix = "OwnCoreLiteAPI";
+    public static String ConsolePrefix = "OwnCoreLiteAPI | ";
 
     public static void enableAPI() {
         initConfig();

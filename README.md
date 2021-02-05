@@ -13,7 +13,7 @@ an inbuilt API for spigot plugins - by nerotvlive - License: <a href="https://gi
     * check if an config entry exists, if not create it
   * PlayerAPI
     * generate playerfiles and save some information there
-    * send automatic formatted messages (optional: with sound)
+    * send automatic formatted messages (optional: with newSound)
   * ServerAPI
     * send automatic formatted console messages
     * check server version
@@ -21,9 +21,9 @@ an inbuilt API for spigot plugins - by nerotvlive - License: <a href="https://gi
     * better server shutdown
     * send debug messages (if that is an enabled thing in the config.yml)
   * SoundAPI
-    * resolve from soundname if this is a legacy sound, or not
+    * resolve from soundname if this is a legacy newSound, or not
     * LegacySound support
-    * new sound support
+    * new newSound support
   * WorldAPI
     * resolve difficulty from names
       * supported: peaceful, easy, normal, hard, 0, 1, 2 and 3

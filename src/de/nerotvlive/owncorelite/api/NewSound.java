@@ -1,6 +1,6 @@
 package de.nerotvlive.owncorelite.api;
 
-public enum Sound {
+public enum NewSound {
     AMBIENT_BASALT_DELTAS_ADDITIONS,
     AMBIENT_BASALT_DELTAS_LOOP,
     AMBIENT_BASALT_DELTAS_MOOD,

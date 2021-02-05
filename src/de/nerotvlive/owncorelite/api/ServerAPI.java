@@ -67,10 +67,18 @@ public class ServerAPI {
     }
 
     public static Boolean isLegacy() {
-        if (getServerVersion() > 112) {
-            return true;
-        } else {
+        if(getServerVersion() == 113) {
             return false;
+        } else if(getServerVersion() == 114) {
+            return false;
+        } else if(getServerVersion() == 115) {
+            return false;
+        } else if(getServerVersion() == 116) {
+            return false;
+        } else if(getServerVersion() > 116) {
+            return false;
+        } else {
+            return true;
         }
     }
 }
