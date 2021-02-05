@@ -5,9 +5,6 @@ import org.bukkit.entity.Player;
 
 public class ServerAPI {
 
-    //OWNCORELITE VERSION: BETA 1.0.0
-    //AUTHOR: NEROTVLIVE
-
     public static void sendConsoleMessage(String message) {
         Bukkit.getServer().getConsoleSender().sendMessage(Main.ConsolePrefix+message.replace("&","§"));
     }

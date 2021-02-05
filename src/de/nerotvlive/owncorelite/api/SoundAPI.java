@@ -4,9 +4,6 @@ import org.bukkit.Sound;
 
 public class SoundAPI {
 
-    //OWNCORELITE VERSION: BETA 1.0.0
-    //AUTHOR: NEROTVLIVE
-
     public static Sound resolveSound(String soundname) {
         if(ServerAPI.isLegacy()) {
             return Sound.valueOf(LegacySound.valueOf(soundname).toString().toUpperCase());

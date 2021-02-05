@@ -7,9 +7,6 @@ import org.bukkit.entity.Player;
 
 public class WorldAPI {
 
-    //OWNCORELITE VERSION: BETA 1.0.0
-    //AUTHOR: NEROTVLIVE
-
     public static World getPlayerWorld(Player player) {
         return player.getWorld();
     }
@@ -33,6 +30,7 @@ public class WorldAPI {
         }
     }
 
+    @Deprecated
     public static long getTime(String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             return Bukkit.getWorld(worldname).getTime();
@@ -51,6 +49,7 @@ public class WorldAPI {
         }
     }
 
+    @Deprecated
     public static Weather getWeather(String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -70,6 +69,7 @@ public class WorldAPI {
         world.setTime(time);
     }
 
+    @Deprecated
     public static void setTime(long time, String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -82,6 +82,7 @@ public class WorldAPI {
         world.setTime(t);
     }
 
+    @Deprecated
     public static void addTime(long time, String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -95,6 +96,7 @@ public class WorldAPI {
         world.setTime(t);
     }
 
+    @Deprecated
     public static void removeTime(long time, String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -108,6 +110,7 @@ public class WorldAPI {
         world.setStorm(false);
     }
 
+    @Deprecated
     public static void setSun(String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -121,6 +124,7 @@ public class WorldAPI {
         world.setStorm(true);
     }
 
+    @Deprecated
     public static void setRain(String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -134,6 +138,7 @@ public class WorldAPI {
         world.setThundering(true);
     }
 
+    @Deprecated
     public static void setStorm(String worldname) {
         if(Bukkit.getWorld(worldname) != null) {
             World world = Bukkit.getWorld(worldname);
@@ -146,11 +151,13 @@ public class WorldAPI {
         world.setDifficulty(difficulty);
     }
 
+    @Deprecated
     public static void setDifficulty(World world, String difficultyname) {
         Difficulty diff = resolveDifficulty(difficultyname);
         world.setDifficulty(diff);
     }
 
+    @Deprecated
     public static void setDifficulty(String worldname, Difficulty difficulty) {
         World world = Bukkit.getServer().getWorld(worldname);
         if(world != null)  {
@@ -158,6 +165,7 @@ public class WorldAPI {
         }
     }
 
+    @Deprecated
     public static void setDifficulty(String worldname, String difficultyname) {
         Difficulty diff = resolveDifficulty(difficultyname);
         World world = Bukkit.getServer().getWorld(worldname);

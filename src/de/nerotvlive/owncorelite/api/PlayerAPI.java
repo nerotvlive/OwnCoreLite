@@ -1,12 +1,8 @@
 package de.nerotvlive.owncorelite.api;
 
-import org.bukkit.Warning;
 import org.bukkit.entity.Player;
 
 public class PlayerAPI {
-
-    //OWNCORELITE VERSION: BETA 1.0.0
-    //AUTHOR: NEROTVLIVE
 
     public static void savePlayerFile(Player player) {
         ConfigAPI.saveConfig(ConfigAPI.PlayerCFG(player),ConfigAPI.PCFG(player));
@@ -27,7 +23,7 @@ public class PlayerAPI {
         player.sendMessage(ServerAPI.formatMessage(message));
     }
 
-    @Warning
+    @Deprecated
     public static void sendPlayerMessage(Player player,String message,String soundname) {
         player.playSound(player.getLocation(),org.bukkit.Sound.valueOf(soundname),100,100);
         player.sendMessage(ServerAPI.formatMessage(message));
@@ -41,7 +37,7 @@ public class PlayerAPI {
         player.playSound(player.getLocation(),org.bukkit.Sound.valueOf(sound.toString()),100,100);
     }
 
-    @Warning
+    @Deprecated
     public static void playSound(Player player, String soundname) {
         player.playSound(player.getLocation(),org.bukkit.Sound.valueOf(soundname),100,100);
     }

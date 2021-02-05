@@ -7,17 +7,14 @@ import java.io.IOException;
 
 public class ConfigAPI {
 
-    //OWNCORELITE VERSION: BETA 1.0.0
-    //AUTHOR: NEROTVLIVE
-
-    public static File Config = new File("plugins/"+Main.getName()+"/config.yml");
+    public static File Config = new File("plugins/"+Main.PluginName+"/config.yml");
     public static YamlConfiguration CFG = YamlConfiguration.loadConfiguration(Config);
 
-    public static File Messages = new File("plugins/"+Main.getName()+"/messages.yml");
+    public static File Messages = new File("plugins/"+Main.PluginName+"/messages.yml");
     public static YamlConfiguration MSG = YamlConfiguration.loadConfiguration(Messages);
 
     public static File PlayerCFG(Player player) {
-        return new File("plugins/"+Main.getName()+"/users/"+player.getUniqueId()+".yml");
+        return new File("plugins/"+Main.PluginName+"/users/"+player.getUniqueId()+".yml");
     }
     public static YamlConfiguration PCFG(Player player) {
         return YamlConfiguration.loadConfiguration(PlayerCFG(player));

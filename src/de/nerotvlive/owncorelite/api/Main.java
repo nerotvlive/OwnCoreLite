@@ -2,22 +2,17 @@ package de.nerotvlive.owncorelite.api;
 
 public class Main {
 
-    /*
-
-    IMPORTANT: this ISN'T a plugin for spigot. This is an inbuilt API. If you want to use this you need to copy this into your project!
+    /* IMPORTANT: this ISN'T a plugin for spigot. This is an inbuilt API. If you want to use this you need to copy this into your project!
     OWNCORELITE API V1.0.0 BETA
-    AUTHOR: NEROTVLIVE
+    AUTHOR: NEROTVLIVE */
 
-     */
-
-    public static String getName() {
-        return "PluginName";
-    }
-
-    public static String ConsolePrefix = "OwnCoreAPI";
+    //change these following strings
+    public static String PluginName = "OwnCoreLiteAPI";
+    public static String ConsolePrefix = "OwnCoreLiteAPI";
 
     public static void enableAPI() {
         initConfig();
+        ServerAPI.sendConsoleMessage("[OwnCore] LiteAPI is activated!");
     }
 
     public static void initConfig() {
