@@ -29,19 +29,19 @@ public class ServerAPI {
     public static int getServerVersion() {
         if(Bukkit.getVersion().contains("1.0")) {
             return 100;
-        } else if(Bukkit.getVersion().contains("1.1")) {
+        } else if(Bukkit.getVersion().contains("1.1.")) {
             return 101;
-        } else if(Bukkit.getVersion().contains("1.2")) {
+        } else if(Bukkit.getVersion().contains("1.2.")) {
             return 102;
-        } else if(Bukkit.getVersion().contains("1.3")) {
+        } else if(Bukkit.getVersion().contains("1.3.")) {
             return 103;
-        } else if(Bukkit.getVersion().contains("1.4")) {
+        } else if(Bukkit.getVersion().contains("1.4.")) {
             return 104;
-        } else if(Bukkit.getVersion().contains("1.5")) {
+        } else if(Bukkit.getVersion().contains("1.5.")) {
             return 105;
-        } else if(Bukkit.getVersion().contains("1.6")) {
+        } else if(Bukkit.getVersion().contains("1.6.")) {
             return 106;
-        } else if(Bukkit.getVersion().contains("1.7")) {
+        } else if(Bukkit.getVersion().contains("1.7.")) {
             return 107;
         } else if(Bukkit.getVersion().contains("1.8")) {
             return 108;
@@ -67,7 +67,7 @@ public class ServerAPI {
     }
 
     public static Boolean isLegacy() {
-        if(getServerVersion() < 112) {
+        if (getServerVersion() > 112) {
             return true;
         } else {
             return false;
