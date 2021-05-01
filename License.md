@@ -20,4 +20,4 @@ authors:
 
 > Thank you for using my API<br>~ nerotvlive
 
-##### <a href="https://nerotv.de">My website - nerotv.de</a> ###### 
+##### <a href="https://nerotv.live">My website - nerotv.live</a> ###### 
